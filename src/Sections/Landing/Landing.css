@@ -1,0 +1,154 @@
+#landing {
+    width: 100%;
+    height: 100vh;
+}
+
+#landing .random-icon {
+    position: absolute;
+    top: 50%;
+    width: 28px;
+    opacity: .5;
+    transition: color 0.3s ease;
+    animation: randomotion 4s ease-in-out infinite;
+}
+
+#landing .random01 {
+    left: 10%;
+}
+
+#landing .random02 {
+    right: 10%;
+}
+
+
+#landing .first-row {
+    height: 100%;
+}
+
+#landing h4,
+h1 {
+    font-weight: 700;
+}
+
+#landing h4 {
+    font-size: 42px;
+}
+
+#landing .amar-img {
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: .3s;
+}
+
+#landing .amar-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#landing .amar-img:hover {
+    filter: grayscale(0);
+}
+
+#landing h1 {
+    font-size: 78px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#landing h1 span {
+    color: var(--main-color);
+}
+
+#landing .landing-btn {
+    padding: 15px 30px;
+    color: var(--dark-color);
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+#landing .landing-btn a {
+    color: var(--dark-color);
+    font-size: 22px;
+}
+
+/* background rain animation */
+#background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.rain-dot {
+    position: absolute;
+    bottom: 100%;
+    width: 2px;
+    height: 10px;
+    background-color: var(--dark-color);
+    opacity: 0.1;
+    animation: fall linear infinite;
+    animation-duration: calc(2s + 2s * var(--i));
+}
+
+@keyframes randomotion {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+
+    50% {
+        transform: rotate(10deg) scale(1.07);
+    }
+
+    75% {
+        transform: rotate(-10deg) scale(1.07);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@media (max-width:550px) {
+    #landing .first-row {
+        height: 80%;
+    }
+
+    #landing h4 {
+        font-size: 24px;
+    }
+
+    #landing h1 {
+        font-size: 28px;
+    }
+
+    #landing .landing-btn {
+        padding: 8px;
+        display: inline;
+        margin: 15px 3px 0 0 ;
+        
+    }
+    #landing .landing-btn a{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    #landing .amar-img {
+        width: 270px;
+        height: 270px;
+        margin-top: 25px;
+    }
+}

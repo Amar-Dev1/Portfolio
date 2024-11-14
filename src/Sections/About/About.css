@@ -1,0 +1,36 @@
+/* About.css */
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--background2);
+    width: 100%;
+    position: relative;
+}
+
+#about h2 {
+    margin-top: 50px;
+}
+
+#about .about-phrase {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 20px var(--background2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#about .about-phrase p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#about .about-shape {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}

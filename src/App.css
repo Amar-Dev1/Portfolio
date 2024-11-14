@@ -1,0 +1,17 @@
+
+/* components */
+.amar-btn {
+    border: transparent;
+    padding: 15px;
+    margin: 15px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 30px;
+    background-color: var(--main-color);
+
+}
+
+.amar-btn:hover {
+    background-color: var(--main-color-hover);
+    outline: 1px solid var(--main-color);
+}

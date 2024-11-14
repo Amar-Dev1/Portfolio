@@ -1,0 +1,29 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+:root {
+  --main-color: #f75b00;
+  --dark-color: #222;
+  --light-color: #eee;
+  --background: #fafafa;
+  --link-color: #005f99;
+  --background2: #f0f0f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+  color: var(--link-color);
+
+}
