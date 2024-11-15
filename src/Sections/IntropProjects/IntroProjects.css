@@ -1,0 +1,13 @@
+#intro-projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--dark-color);
+}
+
+#intro-projects .projects-title {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: var(--light-color);
+    font-weight: 700;
+}

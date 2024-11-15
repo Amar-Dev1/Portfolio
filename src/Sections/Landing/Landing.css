@@ -75,29 +75,6 @@ h1 {
     font-size: 22px;
 }
 
-/* background rain animation */
-#background-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.rain-dot {
-    position: absolute;
-    bottom: 100%;
-    width: 2px;
-    height: 10px;
-    background-color: var(--dark-color);
-    opacity: 0.1;
-    animation: fall linear infinite;
-    animation-duration: calc(2s + 2s * var(--i));
-}
-
 @keyframes randomotion {
     0% {
         transform: rotate(0) scale(1);
@@ -116,11 +93,6 @@ h1 {
     }
 }
 
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-    }
-}
 
 @media (max-width:550px) {
     #landing .first-row {
@@ -138,14 +110,15 @@ h1 {
     #landing .landing-btn {
         padding: 8px;
         display: inline;
-        margin: 15px 3px 0 0 ;
-        
+        margin: 15px 3px 0 0;
+
     }
-    #landing .landing-btn a{
+
+    #landing .landing-btn a {
         font-weight: 500;
         font-size: 16px;
     }
-    
+
     #landing .amar-img {
         width: 270px;
         height: 270px;
