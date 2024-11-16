@@ -1,3 +1,25 @@
+.boss-parent {
+    position: relative;
+}
+
+.boss-parent .scroll-top {
+    background-color: var(--light-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    border: 1px solid var(--dark-color);
+    cursor: pointer;
+    z-index: 99;
+}
+
+.boss-parent .scroll-top .icon{
+    width: 90%;
+    height: 90%;
+}
 /* components */
 .colored-span {
     color: var(--main-color);
@@ -18,6 +40,8 @@
     background-color: var(--main-color-hover);
     outline: 1px solid var(--main-color);
 }
+
+
 
 .projects-card {
     width: 330px;

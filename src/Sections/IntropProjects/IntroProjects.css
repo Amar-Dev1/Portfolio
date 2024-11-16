@@ -3,6 +3,7 @@
     padding-bottom: 50px;
     background-color: var(--dark-color);
     position: relative;
+    overflow: hidden;
 }
 
 #intro-projects .back-text {
