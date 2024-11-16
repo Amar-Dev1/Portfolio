@@ -9,7 +9,7 @@ const Landing = () => {
         <Container fluid id='landing'>
             <img src={htmlIcon} alt="" className='random-icon random01' />
             <img src={htmlIcon} alt="" className='random-icon random02' />
-            <Row className='first-row d-flex flex-column justify-content-center align-items-center mt-5'>
+            <Row className='first-row d-flex flex-column justify-content-center'>
                 <Col lg={12} md={12} sm={12} className='text-center'>
                     <h4>Yo 🖐 I'm Amar</h4>
                     <h1><span>Frontend</span> Developer</h1>

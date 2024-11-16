@@ -1,12 +1,12 @@
 /* components */
-.colored-span{
+.colored-span {
     color: var(--main-color);
 }
 
 .amar-btn {
     border: transparent;
     padding: 15px;
-    margin: 15px;
+    margin: 0 3px;
     cursor: pointer;
     transition: .3s;
     border-radius: 30px;

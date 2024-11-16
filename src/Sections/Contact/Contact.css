@@ -42,6 +42,7 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
     padding: 10px 20px;
     color: var(--light-color);
 }
