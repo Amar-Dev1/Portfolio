@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <Container fluid id='header'>
       <h3 className="logo">
-        <a href="/">Amarz<span>Code</span></a>
+        <a href="/">Amarz<span className='colored-span'>Code</span></a>
       </h3>
 
       <nav className={`links ${showMenu ? 'show' : ''}`} ref={navRef}>

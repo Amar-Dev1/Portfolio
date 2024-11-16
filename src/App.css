@@ -1,4 +1,8 @@
 /* components */
+.colored-span{
+    color: var(--main-color);
+}
+
 .amar-btn {
     border: transparent;
     padding: 15px;
@@ -20,12 +24,13 @@
     padding: 10px;
     background-color: #333;
     border-radius: 10px;
-    transition: all .4s ease-in-out;
+    transition: all .7s ease-in-out;
+    z-index: 2;
 }
 
 .projects-card:hover {
-    transform: scale(1.02);
-    outline: 1px dashed var(--main-color);
+    transform: rotate(3deg);
+    outline: 1px solid var(--main-color);
 }
 
 .projects-card .card-head h3 {
@@ -80,33 +85,4 @@
 .projects-card .card-footer .code-link {
     margin-left: 15px;
     color: var(--main-color);
-}
-
-/* RainAnimation.css */
-#background-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.rain-dot {
-    position: absolute;
-    bottom: 100%;
-    width: 2px;
-    height: 10px;
-    background-color: var(--dark-color);
-    opacity: 0.1;
-    animation: fall linear infinite;
-    animation-duration: calc(10s + 10s * var(--i));
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-    }
 }

@@ -2,15 +2,15 @@ import ProjectsCard from '../../Components/ProjectsCard/ProjectsCard';
 import './IntroProjects.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import CardsData from '../../Components/ProjectsCard/CardsData';
-import RainMotion from '../../Components/ProjectsCard/RainMotion';
+import { Link } from 'react-router-dom';
+import backText from '../../assets/binary.png';
 const IntroProjects = () => {
   return (
     <Container fluid id='intro-projects'>
-      <RainMotion backgroundStyle='blue'/>
-      <Container>
-        <h2 className="projects-title">My Projects 🚀</h2>
-        <Row >
-
+     <img src={backText} alt="" className='back-text'/>
+      <Container className='sub-container'>
+        <h2 className="projects-title">Some Cool Projects 🚀</h2>
+        <Row className='d-flex justify-content-center'>
           {
             CardsData.map((card, index) => {
               return (
@@ -28,8 +28,8 @@ const IntroProjects = () => {
           }
         </Row>
       </Container>
+      <button className='more-projects amar-btn'><Link to="/projects" className='more-link'>More</Link></button>
     </Container>
   )
 }
-
-export default IntroProjects
+export default IntroProjects;

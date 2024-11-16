@@ -29,5 +29,21 @@ a {
   font-weight: 500;
   text-decoration: inherit;
   color: var(--link-color);
+}
 
+input,
+textarea {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 3px;
+  box-shadow: 1px 1px 10px #eee;
+  transition: all .1s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--main-color);
+  box-shadow: 1px 1px 20px #999;
 }
