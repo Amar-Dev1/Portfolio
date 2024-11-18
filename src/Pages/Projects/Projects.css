@@ -1,0 +1,10 @@
+#projects .back-btn{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#projects .back-btn a{
+    color: var(--light-color);
+}
+#projects .back-btn:hover a{
+    color: var(--dark-color);
+}

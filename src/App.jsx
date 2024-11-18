@@ -2,24 +2,27 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage, Projects } from '../index';
 import { FaArrowUp } from "react-icons/fa6";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 function App() {
-  const handleEvent = ()=>{
-    window.scrollTo(0, 0);
+  // start upArrow button
+  const [showButton, setShowButton] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY >= '1000') {
+      setShowButton(true)
+    }
+    else {
+      setShowButton(false)
+
+    }
   }
-    useEffect(() => {
-      window.addEventListener('scroll', () => {
-        if (window.scrollY >= '1000') {
-          document.querySelector('.scroll-top').style.display = 'block';
-        } else {
-          document.querySelector('.scroll-top').style.display = 'none';
-        }
-      });
-      return () => {
-        window.removeEventListener('scroll', handleEvent);
-      }
-    }, [])
-  
+  const moveScreen = () => {
+    window.scrollTo({ top: 0 })
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => removeEventListener('scroll', handleScroll)
+  }, [])
+  // end upArrow button
   return (
     <BrowserRouter>
       <div className='boss-parent'>
@@ -27,14 +30,16 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/projects' element={<Projects />} />
         </Routes>
-        <div className="scroll-top">
-          <FaArrowUp onClick={handleEvent} className='icon'/>
-        </div>
+        {
+          showButton &&
+          <div className="scroll-top" onClick={moveScreen}>
+            <FaArrowUp className='icon' />
+          </div>
+        }
       </div>
     </BrowserRouter>
   )
 }
-
 // btn to scroll to above
 
 export default App;

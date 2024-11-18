@@ -7,11 +7,12 @@ import backText from '../../assets/binary.png';
 const IntroProjects = () => {
   return (
     <Container fluid id='intro-projects'>
-     <img src={backText} alt="" className='back-text'/>
+      <img src={backText} alt="" className='back-text' />
       <Container className='sub-container'>
         <h2 className="projects-title">Some Cool Projects 🚀</h2>
         <Row className='d-flex justify-content-center'>
           {
+
             CardsData.map((card, index) => {
               return (
                 <Col key={index} xl={4} lg={4} md={6} sm={12} className='d-flex justify-content-center mt-5'>
