@@ -4,4 +4,4 @@ export { default as Header } from './src/Sections/Header/Header';
 export { default as About } from './src/Sections/About/About';
 export { default as Contact } from './src/Sections/Contact/Contact';
 export {default as IntroProjects} from './src/Sections/IntropProjects/IntroProjects'
-export { default as Footer } from './src/Sections/Footer/Footer';
+export { default as Footer } from './src/Components/Footer/Footer';

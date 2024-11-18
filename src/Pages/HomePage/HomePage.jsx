@@ -8,7 +8,7 @@ const HomePage = () => {
             <About />
             <IntroProjects />
             <Contact />
-            <Footer /></>
+        </>
 
     )
 }

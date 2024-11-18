@@ -1,7 +1,7 @@
 import '../../App.css';
-const ProjectsCard = (props) => {
+const IntroProjectsCard = (props) => {
     return (
-        <div className='projects-card'>
+        <div className='intro-projects-card'>
             <div className="card-head">
                 <h3>{props.title}</h3>
             </div>
@@ -17,4 +17,4 @@ const ProjectsCard = (props) => {
     )
 }
 
-export default ProjectsCard;
+export default IntroProjectsCard;

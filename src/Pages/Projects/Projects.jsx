@@ -1,16 +1,33 @@
-import { Container, } from 'react-bootstrap';
+import { Col, Container, Row, } from 'react-bootstrap';
 import './Projects.css';
 import { Link } from 'react-router-dom';
-import { FaArrowLeft } from 'react-icons/fa6'
+import { FaArrowLeft } from 'react-icons/fa6';
+import CardsData from '../../Components/ProjectsCard/CardsData';
+import IntroProjectsCard from '../../Components/ProjectsCard/IntroProjectsCard';
 const Projects = () => {
   return (
     <Container fluid id='projects'>
       <button className='amar-btn back-btn'><Link to="/"><FaArrowLeft /> Home</Link></button>
       <Container className='projects-wrapper'>
-        <h2 style={{ textAlign: 'center' }}>In Progress ...</h2>
+        <h2 className='title'>Awesome Projects I`have Built 🤓</h2>
+        <Row className='mt-5 mb-5'>
+        {
+          CardsData.map((card, index) => {
+            return (
+              <Col key={index} className='d-flex justify-content-center mt-3 card-col' xxl={3} lg={4} md={6}>
+                <IntroProjectsCard
+                  title={card.title}
+                  des={card.des}
+                  img={card.img}
+                />
+              </Col>
+            )
+          })
+        }
+        </Row>
       </Container>
     </Container>
   )
 }
 
-export default Projects
+export default Projects;

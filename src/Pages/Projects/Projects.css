@@ -1,10 +1,25 @@
-#projects .back-btn{
+#projects .back-btn {
     margin-top: 20px;
     margin-left: 20px;
 }
-#projects .back-btn a{
+
+#projects .back-btn a {
     color: var(--light-color);
 }
-#projects .back-btn:hover a{
+
+#projects .back-btn:hover a {
     color: var(--dark-color);
+}
+
+#projects .projects-wrapper .title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+@media (max-width:450px) {
+    #projects .projects-wrapper .title {
+        font-size: 20px;
+    }
 }

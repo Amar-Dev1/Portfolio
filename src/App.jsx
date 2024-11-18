@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { HomePage, Projects } from '../index';
+import { HomePage, Projects, Footer } from '../index';
 import { FaArrowUp } from "react-icons/fa6";
 import { useEffect, useState } from 'react';
 function App() {
@@ -37,6 +37,7 @@ function App() {
           </div>
         }
       </div>
+      <Footer />
     </BrowserRouter>
   )
 }
