@@ -26,6 +26,8 @@ const Projects = () => {
                     title={card.title}
                     des={card.des}
                     img={card.img}
+                    code={card.code}
+                    live={card.live}
                   />
                 </Col>
               )
