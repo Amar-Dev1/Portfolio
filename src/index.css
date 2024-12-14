@@ -14,15 +14,17 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   background: var(--light-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--main-color); /* Darker gray */
+  background: var(--main-color);
+  /* Darker gray */
   border-radius: 10px;
 }
 
@@ -31,9 +33,9 @@ body {
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
 
@@ -58,4 +60,8 @@ input:focus,
 textarea:focus {
   outline: 2px solid var(--main-color);
   box-shadow: 1px 1px 20px #999;
+}
+
+li {
+  list-style-type: none;
 }

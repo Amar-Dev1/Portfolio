@@ -1,3 +1,20 @@
+.upper-section{
+    height: 100vh;
+    transition: all 1s ease-in-out;
+    background: rgb(188, 179, 169);
+    background: linear-gradient(90deg, rgba(188, 179, 169, 1) 0%, rgba(222, 205, 193, 1) 25%, rgba(218, 145, 70, 1) 96%);
+    background-size: 200% 200%;
+    animation: backgroundChange 3s infinite alternate;
+}
+@keyframes backgroundChange {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
 .boss-parent {
     position: relative;
 }
@@ -20,6 +37,7 @@
     width: 90%;
     height: 90%;
 }
+
 
 /* components */
 .colored-span {

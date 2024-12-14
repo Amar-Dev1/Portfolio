@@ -4,17 +4,70 @@
     flex-direction: row;
     align-items: center;
     padding-top: 10px;
+    position: relative;
 }
 
-#header .logo {
-    padding: 5px;
+
+#header .profile-wrapper .profile-img {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#header .profile-wrapper .profile-detail {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    transform: translateY(80%);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
     border-radius: 5px;
-    font-size: 32px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
 }
 
-#header .logo a {
-    color: var(--dark-color);
-    font-weight: bold;
+#header .profile-wrapper .profile-detail::before {
+    position: absolute;
+    content: '';
+    left: 20%;
+    top: -5px;
+    margin-left: -5px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ddd;
+}
+
+#header .profile-wrapper .profile-detail li {
+    padding: 5px;
+}
+
+#header .profile-wrapper:hover .profile-detail {
+    visibility: visible;
+}
+
+#header .profile-wrapper:hover .profile-img {
+    background-color: #ccc;
+    box-shadow: 5px 5px 20px #666;
+    background: linear-gradient(135deg, #f58529, #f77737, #feda77, #dd2a7b, #8134af);
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 #header .links {
@@ -48,6 +101,9 @@
 }
 
 #header .icon-wrapper {
+    position: absolute;
+    right: 40px;
+    top: 50px;
     background-color: var(--dark-color);
     display: flex;
     justify-content: center;
@@ -76,3 +132,8 @@
         transform: scale(1);
     }
 }
+/* @media (max-width:500px) {
+    #header .icon-wrapper{
+        top: 50px;
+    }
+} */

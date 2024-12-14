@@ -1,7 +1,6 @@
 import './Landing.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import htmlIcon from '../../assets/html-icon.png';
-import myImg from '../../assets/me.png';
 
 const Landing = () => {
 
@@ -15,9 +14,9 @@ const Landing = () => {
                     <h1><span>Frontend</span> Developer</h1>
                     <button className='amar-btn landing-btn'><a href="#intro-projects">My Projects</a></button>
                     <button className='amar-btn landing-btn'><a href="#contact">Contact me !</a></button>
-                    <div className="amar-img">
+                    {/* <div className="amar-img">
                         <img className='amar-img' src={myImg} alt="Amar Image" />
-                    </div>
+                    </div> */}
                 </Col>
             </Row>
         </Container>
