@@ -52,6 +52,11 @@
 
 #header .profile-wrapper .profile-detail li {
     padding: 5px;
+    transition: all .3s ease-in-out;
+}
+
+#header .profile-wrapper .profile-detail li:hover {
+    margin-left: 10px;
 }
 
 #header .profile-wrapper:hover .profile-detail {
@@ -96,8 +101,27 @@
 }
 
 #header .links a {
+    position: relative;
     color: var(--light-color);
     font-size: 22px;
+    transition: all .3s ease-in-out;
+}
+
+#header .links a::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 3px;
+    width: 3px;
+    height: 80%;
+    border-left: 2px solid var(--main-color);
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    opacity: 0;
+}
+
+#header .links a:hover::before {
+    opacity: 1;
 }
 
 #header .icon-wrapper {
@@ -132,6 +156,7 @@
         transform: scale(1);
     }
 }
+
 /* @media (max-width:500px) {
     #header .icon-wrapper{
         top: 50px;
