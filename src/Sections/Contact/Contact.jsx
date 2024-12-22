@@ -29,11 +29,11 @@ const Contact = () => {
         <Row>
           <div className="form-wrapper">
             <form onSubmit={sendEmail}>
-             <div className="inputs">
-             <input type="text" name='user_name' placeholder="Your Name" required />
-             <input type="email" name='user-email' placeholder="Your Email" required />
-             </div>
-              <textarea placeholder="Say Hello " name='message' required />
+              <div className="inputs">
+                <input type="text" name='user_name' placeholder="Your Name" required />
+                <input type="email" name='user-email' placeholder="Your Email" required />
+              </div>
+              <textarea placeholder="Say Hello 👋" name='message' required />
               <button type="submit" className='amar-btn'>Send</button>
             </form>
           </div>

@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage, Projects, Footer } from '../index';
-import { FaArrowUp } from "react-icons/fa6";
+import { FaAngleUp } from "react-icons/fa6";
 import { useEffect, useState } from 'react';
 function App() {
   // start upArrow button
@@ -33,7 +33,7 @@ function App() {
         {
           showButton &&
           <div className="scroll-top" onClick={moveScreen}>
-            <FaArrowUp className='icon' />
+            <FaAngleUp  className='icon' />
           </div>
         }
       </div>

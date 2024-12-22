@@ -1,4 +1,4 @@
-.upper-section{
+.upper-section {
     height: 100vh;
     transition: all 1s ease-in-out;
     background: rgb(188, 179, 169);
@@ -6,6 +6,7 @@
     background-size: 200% 200%;
     animation: backgroundChange 3s infinite alternate;
 }
+
 @keyframes backgroundChange {
     0% {
         background-position: 0% 0%;
@@ -15,29 +16,27 @@
         background-position: 100% 100%;
     }
 }
+
 .boss-parent {
     position: relative;
 }
 
 .boss-parent .scroll-top {
-    background-color: var(--light-color);
+    background-color: aliceblue;
     position: fixed;
     bottom: 20px;
     right: 20px;
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    padding: 5px;
-    border: 1px solid var(--dark-color);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
     cursor: pointer;
     z-index: 99;
 }
-
-.boss-parent .scroll-top .icon {
-    width: 90%;
-    height: 90%;
-}
-
 
 /* components */
 .colored-span {
