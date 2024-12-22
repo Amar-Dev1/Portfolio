@@ -21,12 +21,12 @@ const Header = () => {
 
       <div className="profile-wrapper">
         <div className="profile-img">
-          <img src={myImg} alt="profile" className="profile-image" />
+          <img src={myImg} alt="profile" className="profile-image"  tabindex="0"/>
         </div>
         <div className="profile-detail">
-          <li><FaRegFaceSmileWink/><a href="#about"> Who am I ?</a></li><hr style={{ padding: "0", margin: "0" }} />
-          <li><MdOutlineRocketLaunch/><a href="#intro-projects"> Projects</a></li><hr style={{ padding: "0", margin: "0" }} />
-          <li><TbFileCv/><a href="https://drive.google.com/file/d/16btXP1vJi5NNK0E6v3iNDoLecqAyOGd_/view?usp=sharing" target='blank'> CV</a></li>
+          <li><FaRegFaceSmileWink className='profile-icon'/><a href="#about"> Who am I ?</a></li>
+          <li><MdOutlineRocketLaunch className='profile-icon'/><a href="#intro-projects"> Projects</a></li>
+          <li><TbFileCv className='profile-icon'/><a href="https://drive.google.com/file/d/16btXP1vJi5NNK0E6v3iNDoLecqAyOGd_/view?usp=sharing" target='blank'> CV</a></li>
         </div>
       </div>
 

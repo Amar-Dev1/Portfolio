@@ -1,12 +1,16 @@
+/* Header Styles */
 #header {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
     padding-top: 10px;
-    position: relative;
 }
 
+/* Profile Wrapper */
+.profile-wrapper {
+    position: relative;
+}
 
 #header .profile-wrapper .profile-img {
     width: 60px;
@@ -17,53 +21,15 @@
     align-items: center;
     border-radius: 50%;
     position: absolute;
-    top: 40px;
-    left: 40px;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-}
-
-#header .profile-wrapper .profile-detail {
-    position: absolute;
-    left: 30px;
     top: 30px;
-    transform: translateY(80%);
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 5px;
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    transition: all .3s ease-in-out;
-    visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-#header .profile-wrapper .profile-detail::before {
-    position: absolute;
-    content: '';
-    left: 20%;
-    top: -10px;
-    margin-left: -5px;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid rgba(255, 255, 255, 0.5);
-}
 
-#header .profile-wrapper .profile-detail li {
-    padding: 5px;
-    transition: all .3s ease-in-out;
-}
-
-#header .profile-wrapper .profile-detail li:hover {
-    margin-left: 10px;
-}
-
-#header .profile-wrapper:hover .profile-detail {
-    visibility: visible;
-}
-
-#header .profile-wrapper:hover .profile-img {
+#header .profile-wrapper .profile-img:hover {
     background-color: #ccc;
     box-shadow: 5px 5px 20px #666;
     background: linear-gradient(135deg, #f58529, #f77737, #feda77, #dd2a7b, #8134af);
@@ -73,8 +39,76 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
 }
 
+
+.profile-img::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: linear-gradient(135deg, #f58529, #f77737, #feda77);
+    z-index: 1;
+    animation: bounceShape 4s ease-in-out infinite;
+    opacity: .7;
+}
+
+/* Optional bounce animation for the triangle */
+@keyframes bounceShape {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+        /* Slight upward bounce */
+    }
+}
+
+/* Profile Detail */
+.profile-wrapper .profile-detail {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.profile-detail li a,
+.profile-wrapper .profile-detail .profile-icon {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.profile-wrapper:focus-within .profile-detail {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Links */
 #header .links {
     position: fixed;
     top: 0;
@@ -86,12 +120,11 @@
     background-color: var(--dark-color);
     height: 100vh;
     width: 100%;
-    transition: all .3s ease-in-out;
     opacity: 0;
     transform: translateY(-50px);
-    transition: all .3s ease-in-out;
     pointer-events: none;
     z-index: 99;
+    transition: all 0.3s ease-in-out;
 }
 
 #header .links.show {
@@ -104,7 +137,7 @@
     position: relative;
     color: var(--light-color);
     font-size: 22px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #header .links a::before {
@@ -116,7 +149,7 @@
     height: 80%;
     border-left: 2px solid var(--main-color);
     border-radius: 20px;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     opacity: 0;
 }
 
@@ -124,6 +157,7 @@
     opacity: 1;
 }
 
+/* Icon Wrapper */
 #header .icon-wrapper {
     position: absolute;
     right: 40px;
@@ -143,6 +177,7 @@
     color: var(--light-color);
 }
 
+/* Animation */
 @keyframes barAnimation {
     0% {
         transform: scale(1);
@@ -156,9 +191,3 @@
         transform: scale(1);
     }
 }
-
-/* @media (max-width:500px) {
-    #header .icon-wrapper{
-        top: 50px;
-    }
-} */
