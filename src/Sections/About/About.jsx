@@ -11,7 +11,7 @@ const About = () => {
             <h2 className="title">About Me</h2>
             <div className='about-phrase'>
               <p>
-                My name is <span className="my-name">Amar</span>. A Passionate computer science, web development student, driven to excel in software engineering and make a positive impact in the industry. I have good knowledge with : javascript, python, Bootstrap, React.js, node.js, django, mysql and git & github.</p>
+                My name is <span className="my-name">Amar</span>. A Passionate computer science, web development student, driven to excel in software engineering and make a positive impact in the industry. I have good knowledge with : javascript, python, Bootstrap, React.js, django, mysql and git & github.</p>
             </div>
           </Col>
           <Col lg={6} md={12} sm={12} className="d-flex justify-content-center align-items-center"> {/* Center the image vertically and horizontally */}
