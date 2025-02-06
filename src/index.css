@@ -24,7 +24,6 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background: var(--main-color);
-  /* Darker gray */
   border-radius: 10px;
 }
 
