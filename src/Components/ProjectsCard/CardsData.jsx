@@ -5,7 +5,7 @@ import santechImg from '../../assets/santech-img.png';
 import calcImg from '../../assets/a-calculator.png';
 import lemonImg from '../../assets/lemonproject.png';
 const CardsData = [
-    { id: 1, title: "Littlelemon", des: "full-stack web application for LittleLemon restaurant, with a lot of features. This project belong made with React.js for UI ⚡ and Django for backend ✨",img:lemonImg,live:'https://little-lemon-p576.vercel.app',code :"https://github.com/Amar-Dev1/LittleLemon" },
+    { id: 1, title: "Littlelemon", des: "full-stack web application for LittleLemon restaurant, with a lot of features. This project made with React.js for UI ⚡ and Django for backend ✨",img:lemonImg,live:'https://little-lemon-p576.vercel.app',code :"https://github.com/Amar-Dev1/LittleLemon" },
     { id: 2, title: "L4S", des: "L4S is a website for learn4sudan non-profit organization consist of a lot of cool stuff✨. made with React.js, bootstrap and Sanity for content management.", img: l4sImg, live: "https://learn4-sudan-a8rv.vercel.app/", code: "https://github.com/Amar-Dev1/Learn4Sudan" },
     { id: 3, title: "DashboardUI", des: "a responsive dashboard showing the risks of Cybernetics Risks and detect the Surfaces that are vulnerable to penetration. made with React.js, Bootstrap and graph.js liberary", img: dashboardImg, live: "https://challenge-five-alpha.vercel.app", code: "https://github.com/Amar-Dev1/Challenge" },
     { id: 4, title: "Phenix Gym", des: "it`s a modren responsive website for Gym guiding and coaching for changing bodies and lives. made with React.js.", img: phenixImg, live: "https://phenix-gym.vercel.app/", code: "https://github.com/Amar-Dev1/Phenix-Gym" },
