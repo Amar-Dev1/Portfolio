@@ -29,6 +29,9 @@ color:var(--main-color);
     line-height: 1.5;
     opacity: .8;
 }
+#about .about-phrase .tech {
+    opacity: 1 !important;
+}
 
 #about .about-shape {
     width: 100%;
