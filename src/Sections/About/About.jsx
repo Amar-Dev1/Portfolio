@@ -11,10 +11,12 @@ const About = () => {
             <h2 className="title">About Me</h2>
             <div className='about-phrase'>
               <p>
-                My name is <span className="my-name">Amar</span>. A Passionate computer science, web development student, driven to excel in software engineering and make a positive impact in the industry. I have good knowledge with : javascript, python, Bootstrap, React.js, django, mysql and git & github.</p>
+                My name is <span className="my-name">Amar</span>. Passionate computer science student with a focus on web development. Experienced with technologies like Python,
+Django, React.js, and Flask, and always eager to learn and contribute to impactful projects. Looking for opportunities to
+grow as a software engineer and work on projects that improve lives.</p>
             </div>
           </Col>
-          <Col lg={6} md={12} sm={12} className="d-flex justify-content-center align-items-center"> {/* Center the image vertically and horizontally */}
+          <Col lg={6} md={12} sm={12} className="d-flex justify-content-center align-items-center">
             <img src={discoverShape} alt="About Amar" className='about-shape' />
           </Col>
         </Row>
