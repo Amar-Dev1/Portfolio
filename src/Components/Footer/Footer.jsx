@@ -12,7 +12,7 @@ const Footer = () => {
           <a href="https://linkedin.com/in/amar-yasir" target='blank'><FaLinkedin className='icon' /></a>
           <a href="https://github.com/Amar-Dev1" target='blank'> <FaGithub className='icon' /></a>
           <a href="mailto:AmarOfficial249@gmail.com" target='blank'>  <FaEnvelope className='icon' /></a>
-          <a href="https://drive.google.com/file/d/1Cr131Mf42m7eoO8N-nTABn2loY6hRr0U/view?usp=sharing" target='blank'><img src={amarCV} alt="" className='cv-icon'/></a>
+          <a href="https://drive.google.com/file/d/1vIOogs3Qm6ssAwWRckSrRKdhYaE7pgMD/view?usp=sharing" target='blank'><img src={amarCV} alt="" className='cv-icon'/></a>
         </div>
       </div>
     </Container>

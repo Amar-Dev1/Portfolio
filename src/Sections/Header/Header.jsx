@@ -26,7 +26,7 @@ const Header = () => {
         <div className="profile-detail">
           <li><FaRegFaceSmileWink className='profile-icon' /><a href="#about"> Who am I ?</a></li>
           <li><MdOutlineRocketLaunch className='profile-icon' /><a href="#intro-projects"> Projects</a></li>
-          <li><TbFileCv className='profile-icon' /><a href="https://drive.google.com/file/d/1Cr131Mf42m7eoO8N-nTABn2loY6hRr0U/view?usp=sharing" target='blank'> CV</a></li>
+          <li><TbFileCv className='profile-icon' /><a href="https://drive.google.com/file/d/1vIOogs3Qm6ssAwWRckSrRKdhYaE7pgMD/view?usp=sharing" target='blank'> CV</a></li>
         </div>
       </div>
 
